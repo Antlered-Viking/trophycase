@@ -1,0 +1,19 @@
+img{
+  width:60px;
+}
+
+.info, .how-to-container{
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.how-to-container{
+  flex-direction: row;
+}
+
+.info{
+  width: 25%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
