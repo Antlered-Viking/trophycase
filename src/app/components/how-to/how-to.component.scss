@@ -1,19 +1,8 @@
 img{
-  width:60px;
-}
-
-.info, .how-to-container{
-  display: flex;
-  justify-content: space-evenly;
-}
-
-.how-to-container{
-  flex-direction: row;
+  max-width:60px;
 }
 
 .info{
   width: 25%;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  margin-top:2em;
 }

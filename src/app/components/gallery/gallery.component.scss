@@ -1,18 +1,13 @@
 .networkBoxes{
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  margin-top: 2vh;
+  margin-bottom: 2.5vh;
 }
 
 .headline{
-  // font-weight: 400;
-  font-size: 2em;
+  font-size: 1.6em;
+  margin-left: 5vw;
 }
 
 .showcase{
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  padding: 5em;
+  margin: 5vw;
 }

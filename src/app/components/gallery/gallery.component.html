@@ -1,4 +1,4 @@
-<div class="networkBoxes">
+<div fxLayout="row" fxLayoutAlign="center" class="networkBoxes">
   <mat-checkbox [checked]="showEth" (change)="showEth=!showEth" color="primary">Ethereum</mat-checkbox>
   <span style="width: 3%"></span>
   <mat-checkbox [checked]="showPoly" (change)="showPoly=!showPoly" color="primary">Polygon</mat-checkbox>
@@ -8,7 +8,7 @@
   <span class="headline">
     Featured Ethereum NFTs
   </span>
-  <div class="showcase">
+  <div fxLayout="row wrap" fxLayoutAlign="space-evenly" class="showcase">
     <div *ngFor="let itm of ethShowcase">
       <app-trophycard [thumbURL]=itm.thumbURL [title]=itm.title [author]=itm.author></app-trophycard>
     </div>
@@ -19,4 +19,9 @@
   <span class="headline">
     Featured Polygon NFTs
   </span>
+  <div fxLayout="row wrap" fxLayoutAlign="space-evenly" class="showcase">
+    <div *ngFor="let itm of polyShowcase">
+      <app-trophycard [thumbURL]=itm.thumbURL [title]=itm.title [author]=itm.author></app-trophycard>
+    </div>
+  </div>
 </div>

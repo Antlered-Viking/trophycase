@@ -1,5 +1,6 @@
 .nav{
   height: 2em;
+  margin-bottom: 7.5vh;
 }
 
 a{
@@ -33,14 +34,10 @@ button, button:hover{
 
 .buttons{
   float: right;
-  display: flex;
-  align-items: center;
   height: 90px;
 }
 
 .branding {
   float: left;
-  display: flex;
-  align-items: center;
   height: 90px;
 }
