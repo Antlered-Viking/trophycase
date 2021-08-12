@@ -1,0 +1,17 @@
+<div class="networkBoxes">
+  <mat-checkbox [checked]="showEth" (change)="showEth=!showEth" color="primary">Ethereum</mat-checkbox>
+  <span style="width: 3%"></span>
+  <mat-checkbox [checked]="showPoly" (change)="showPoly=!showPoly" color="primary">Polygon</mat-checkbox>
+</div>
+
+<div class="ethShowcase" *ngIf=showEth>
+  <span class="headline">
+    Featured Ethereum NFTs
+  </span>
+</div>
+
+<div class="polyShowcase" *ngIf=showPoly>
+  <span class="headline">
+    Featured Polygon NFTs
+  </span>
+</div>
