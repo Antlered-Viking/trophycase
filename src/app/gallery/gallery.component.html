@@ -8,6 +8,11 @@
   <span class="headline">
     Featured Ethereum NFTs
   </span>
+  <div class="showcase">
+    <div *ngFor="let itm of ethShowcase">
+      <app-trophycard [thumbURL]=itm.thumbURL [title]=itm.title [author]=itm.author></app-trophycard>
+    </div>
+  </div>
 </div>
 
 <div class="polyShowcase" *ngIf=showPoly>

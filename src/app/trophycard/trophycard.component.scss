@@ -1,0 +1,34 @@
+.mat-card{
+  width: 320px;
+  border-radius: 5%;
+  box-shadow: none;
+  // margin: 1em;
+  cursor: pointer;
+}
+
+.infoPanel{
+  display: flex;
+  flex-direction: column;
+}
+
+.menuButton {
+  position: absolute;
+  // border-radius: 50%;
+  width: 3em;
+  height: 3em;
+  background-color: white;
+  margin-left: -4em;
+}
+
+img{
+  width: 100%;
+  height: 100%;
+}
+
+mat-menu, mat-menu-item{
+  border-radius: 50%;
+}
+
+.mat-menu-content{
+  min-width: 500px;
+}

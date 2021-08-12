@@ -1,0 +1,32 @@
+<mat-card>
+  <img mat-card-image [src]="thumbURL" [alt]="title" />
+
+  <button
+    mat-icon-button
+    [matMenuTriggerFor]="menu"
+    (menuOpened)="menuToggle()"
+    (menuClosed)="clearMenu()"
+    class="menuButton"
+  >
+    <mat-icon>{{ activeMenuIcon }}</mat-icon>
+  </button>
+
+  <mat-menu #menu="matMenu" xPosition="before">
+    <ng-template matMenuContent>
+      <button mat-menu-item>
+        <b> RabbitHole </b>
+      </button>
+      <button mat-menu-item>
+        <b> BizarroWorld </b>
+      </button>
+      <button mat-menu-item>
+        <b> View on OpenSea </b>
+      </button>
+    </ng-template>
+  </mat-menu>
+
+  <div class="infoPanel">
+    <b style="font-size: 1.25em">{{ title }}</b>
+    <span>by {{ author }}</span>
+  </div>
+</mat-card>
